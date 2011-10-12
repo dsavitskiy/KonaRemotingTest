@@ -37,6 +37,7 @@ namespace KonaRemotingClient
             Job jj = new Job();
             jj.start();
 
+
             ChannelServices.RegisterChannel(new HttpChannel(), false);
 
             IHelloRemoting obj = (IHelloRemoting)Activator.GetObject(typeof(IHelloRemoting),
